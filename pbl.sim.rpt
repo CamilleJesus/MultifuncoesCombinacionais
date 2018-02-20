@@ -1,0 +1,313 @@
+Simulator report for pbl
+Tue Jan 26 16:37:55 2016
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 155 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 21875        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; ACEX1K       ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 155          ;
+; Total output ports checked                          ; 155          ;
+; Total output ports with complete 1/0-value coverage ; 155          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                    ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |pbl|led2                                    ; |pbl|led2                                    ; pin_out          ;
+; |pbl|A                                       ; |pbl|A                                       ; out              ;
+; |pbl|B                                       ; |pbl|B                                       ; out              ;
+; |pbl|C                                       ; |pbl|C                                       ; out              ;
+; |pbl|D                                       ; |pbl|D                                       ; out              ;
+; |pbl|E                                       ; |pbl|E                                       ; out              ;
+; |pbl|F                                       ; |pbl|F                                       ; out              ;
+; |pbl|G                                       ; |pbl|G                                       ; out              ;
+; |pbl|led1                                    ; |pbl|led1                                    ; pin_out          ;
+; |pbl|led6                                    ; |pbl|led6                                    ; pin_out          ;
+; |pbl|led3                                    ; |pbl|led3                                    ; pin_out          ;
+; |pbl|led4                                    ; |pbl|led4                                    ; pin_out          ;
+; |pbl|led5                                    ; |pbl|led5                                    ; pin_out          ;
+; |pbl|led5:inst3|inst30                       ; |pbl|led5:inst3|inst30                       ; out0             ;
+; |pbl|led5:inst3|inst7                        ; |pbl|led5:inst3|inst7                        ; out0             ;
+; |pbl|led5:inst3|inst5                        ; |pbl|led5:inst3|inst5                        ; out0             ;
+; |pbl|led5:inst3|inst3                        ; |pbl|led5:inst3|inst3                        ; out0             ;
+; |pbl|led5:inst3|inst2                        ; |pbl|led5:inst3|inst2                        ; out0             ;
+; |pbl|led5:inst3|inst1                        ; |pbl|led5:inst3|inst1                        ; out0             ;
+; |pbl|led5:inst3|inst                         ; |pbl|led5:inst3|inst                         ; out0             ;
+; |pbl|led5:inst3|inst14                       ; |pbl|led5:inst3|inst14                       ; out0             ;
+; |pbl|led5:inst3|inst12                       ; |pbl|led5:inst3|inst12                       ; out0             ;
+; |pbl|led5:inst3|inst13                       ; |pbl|led5:inst3|inst13                       ; out0             ;
+; |pbl|led5:inst3|inst10                       ; |pbl|led5:inst3|inst10                       ; out0             ;
+; |pbl|led5:inst3|inst9                        ; |pbl|led5:inst3|inst9                        ; out0             ;
+; |pbl|led5:inst3|inst8                        ; |pbl|led5:inst3|inst8                        ; out0             ;
+; |pbl|led5:inst3|inst6                        ; |pbl|led5:inst3|inst6                        ; out0             ;
+; |pbl|led5:inst3|inst17                       ; |pbl|led5:inst3|inst17                       ; out0             ;
+; |pbl|led5:inst3|inst15                       ; |pbl|led5:inst3|inst15                       ; out0             ;
+; |pbl|led5:inst3|inst19                       ; |pbl|led5:inst3|inst19                       ; out0             ;
+; |pbl|led5:inst3|inst25                       ; |pbl|led5:inst3|inst25                       ; out0             ;
+; |pbl|led5:inst3|inst24                       ; |pbl|led5:inst3|inst24                       ; out0             ;
+; |pbl|led5:inst3|inst22                       ; |pbl|led5:inst3|inst22                       ; out0             ;
+; |pbl|led5:inst3|inst32                       ; |pbl|led5:inst3|inst32                       ; out0             ;
+; |pbl|led5:inst3|inst31                       ; |pbl|led5:inst3|inst31                       ; out0             ;
+; |pbl|led5:inst3|inst29                       ; |pbl|led5:inst3|inst29                       ; out0             ;
+; |pbl|led5:inst3|inst28                       ; |pbl|led5:inst3|inst28                       ; out0             ;
+; |pbl|led5:inst3|inst27                       ; |pbl|led5:inst3|inst27                       ; out0             ;
+; |pbl|led5:inst3|inst26                       ; |pbl|led5:inst3|inst26                       ; out0             ;
+; |pbl|Led4:inst2|inst4                        ; |pbl|Led4:inst2|inst4                        ; out0             ;
+; |pbl|Led4:inst2|inst3                        ; |pbl|Led4:inst2|inst3                        ; out0             ;
+; |pbl|Led4:inst2|2                            ; |pbl|Led4:inst2|2                            ; out0             ;
+; |pbl|Led4:inst2|1                            ; |pbl|Led4:inst2|1                            ; out0             ;
+; |pbl|Led4:inst2|5                            ; |pbl|Led4:inst2|5                            ; out0             ;
+; |pbl|Led4:inst2|4                            ; |pbl|Led4:inst2|4                            ; out0             ;
+; |pbl|Led4:inst2|13                           ; |pbl|Led4:inst2|13                           ; out0             ;
+; |pbl|Led4:inst2|3                            ; |pbl|Led4:inst2|3                            ; out0             ;
+; |pbl|Led4:inst2|i6                           ; |pbl|Led4:inst2|i6                           ; out0             ;
+; |pbl|Led4:inst2|8                            ; |pbl|Led4:inst2|8                            ; out0             ;
+; |pbl|Led4:inst2|7                            ; |pbl|Led4:inst2|7                            ; out0             ;
+; |pbl|Led4:inst2|9                            ; |pbl|Led4:inst2|9                            ; out0             ;
+; |pbl|Led4:inst2|11                           ; |pbl|Led4:inst2|11                           ; out0             ;
+; |pbl|Led4:inst2|10                           ; |pbl|Led4:inst2|10                           ; out0             ;
+; |pbl|Led4:inst2|12                           ; |pbl|Led4:inst2|12                           ; out0             ;
+; |pbl|led3:inst1|inst33                       ; |pbl|led3:inst1|inst33                       ; out0             ;
+; |pbl|led3:inst1|inst5                        ; |pbl|led3:inst1|inst5                        ; out0             ;
+; |pbl|led3:inst1|inst4                        ; |pbl|led3:inst1|inst4                        ; out0             ;
+; |pbl|led3:inst1|inst3                        ; |pbl|led3:inst1|inst3                        ; out0             ;
+; |pbl|led3:inst1|inst2                        ; |pbl|led3:inst1|inst2                        ; out0             ;
+; |pbl|led3:inst1|inst1                        ; |pbl|led3:inst1|inst1                        ; out0             ;
+; |pbl|led3:inst1|inst                         ; |pbl|led3:inst1|inst                         ; out0             ;
+; |pbl|led3:inst1|inst14                       ; |pbl|led3:inst1|inst14                       ; out0             ;
+; |pbl|led3:inst1|inst13                       ; |pbl|led3:inst1|inst13                       ; out0             ;
+; |pbl|led3:inst1|inst11                       ; |pbl|led3:inst1|inst11                       ; out0             ;
+; |pbl|led3:inst1|inst10                       ; |pbl|led3:inst1|inst10                       ; out0             ;
+; |pbl|led3:inst1|inst8                        ; |pbl|led3:inst1|inst8                        ; out0             ;
+; |pbl|led3:inst1|inst6                        ; |pbl|led3:inst1|inst6                        ; out0             ;
+; |pbl|led3:inst1|inst17                       ; |pbl|led3:inst1|inst17                       ; out0             ;
+; |pbl|led3:inst1|inst15                       ; |pbl|led3:inst1|inst15                       ; out0             ;
+; |pbl|led3:inst1|inst19                       ; |pbl|led3:inst1|inst19                       ; out0             ;
+; |pbl|led3:inst1|inst23                       ; |pbl|led3:inst1|inst23                       ; out0             ;
+; |pbl|led3:inst1|inst21                       ; |pbl|led3:inst1|inst21                       ; out0             ;
+; |pbl|led3:inst1|inst32                       ; |pbl|led3:inst1|inst32                       ; out0             ;
+; |pbl|led3:inst1|inst29                       ; |pbl|led3:inst1|inst29                       ; out0             ;
+; |pbl|led3:inst1|inst26                       ; |pbl|led3:inst1|inst26                       ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block14:inst27|inst  ; |pbl|ProjetoLed6:inst12|Block14:inst27|inst  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block13:inst26|inst3 ; |pbl|ProjetoLed6:inst12|Block13:inst26|inst3 ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block13:inst26|inst  ; |pbl|ProjetoLed6:inst12|Block13:inst26|inst  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block13:inst26|inst1 ; |pbl|ProjetoLed6:inst12|Block13:inst26|inst1 ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block12:inst25|inst1 ; |pbl|ProjetoLed6:inst12|Block12:inst25|inst1 ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block12:inst25|inst  ; |pbl|ProjetoLed6:inst12|Block12:inst25|inst  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block11:inst24|inst1 ; |pbl|ProjetoLed6:inst12|Block11:inst24|inst1 ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block11:inst24|inst  ; |pbl|ProjetoLed6:inst12|Block11:inst24|inst  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block10:inst23|inst3 ; |pbl|ProjetoLed6:inst12|Block10:inst23|inst3 ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block10:inst23|inst  ; |pbl|ProjetoLed6:inst12|Block10:inst23|inst  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block8:inst21|inst5  ; |pbl|ProjetoLed6:inst12|Block8:inst21|inst5  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block8:inst21|inst2  ; |pbl|ProjetoLed6:inst12|Block8:inst21|inst2  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block8:inst21|inst4  ; |pbl|ProjetoLed6:inst12|Block8:inst21|inst4  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block9:inst22|inst6  ; |pbl|ProjetoLed6:inst12|Block9:inst22|inst6  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block9:inst22|inst4  ; |pbl|ProjetoLed6:inst12|Block9:inst22|inst4  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block9:inst22|inst5  ; |pbl|ProjetoLed6:inst12|Block9:inst22|inst5  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block7:inst20|inst2  ; |pbl|ProjetoLed6:inst12|Block7:inst20|inst2  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block7:inst20|inst   ; |pbl|ProjetoLed6:inst12|Block7:inst20|inst   ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block7:inst20|inst1  ; |pbl|ProjetoLed6:inst12|Block7:inst20|inst1  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block6:inst18|inst   ; |pbl|ProjetoLed6:inst12|Block6:inst18|inst   ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block5:inst17|inst4  ; |pbl|ProjetoLed6:inst12|Block5:inst17|inst4  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block4:inst16|inst4  ; |pbl|ProjetoLed6:inst12|Block4:inst16|inst4  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block3:inst15|inst1  ; |pbl|ProjetoLed6:inst12|Block3:inst15|inst1  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block2:inst|inst1    ; |pbl|ProjetoLed6:inst12|Block2:inst|inst1    ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block2:inst|inst     ; |pbl|ProjetoLed6:inst12|Block2:inst|inst     ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block1:inst14|BAND   ; |pbl|ProjetoLed6:inst12|Block1:inst14|BAND   ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block1:inst14|inst   ; |pbl|ProjetoLed6:inst12|Block1:inst14|inst   ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block15:inst1|inst1  ; |pbl|ProjetoLed6:inst12|Block15:inst1|inst1  ; out0             ;
+; |pbl|ProjetoLed6:inst12|Block15:inst1|inst   ; |pbl|ProjetoLed6:inst12|Block15:inst1|inst   ; out0             ;
+; |pbl|LED1-B0:inst11|S                        ; |pbl|LED1-B0:inst11|S                        ; out0             ;
+; |pbl|LED1-B0:inst11|AB~C~DE~G                ; |pbl|LED1-B0:inst11|AB~C~DE~G                ; out0             ;
+; |pbl|LED1-B0:inst11|AB~CDF~G                 ; |pbl|LED1-B0:inst11|AB~CDF~G                 ; out0             ;
+; |pbl|LED1-B0:inst11|AB~DFG                   ; |pbl|LED1-B0:inst11|AB~DFG                   ; out0             ;
+; |pbl|LED1-B0:inst11|AB                       ; |pbl|LED1-B0:inst11|AB                       ; out0             ;
+; |pbl|LED1-B0:inst11|ABC~E~F                  ; |pbl|LED1-B0:inst11|ABC~E~F                  ; out0             ;
+; |pbl|LED1-B0:inst11|ABC~F~G                  ; |pbl|LED1-B0:inst11|ABC~F~G                  ; out0             ;
+; |pbl|LED1-B0:inst11|B~C~DEF~G                ; |pbl|LED1-B0:inst11|B~C~DEF~G                ; out0             ;
+; |pbl|LED1-B0:inst11|AB~CD~FG                 ; |pbl|LED1-B0:inst11|AB~CD~FG                 ; out0             ;
+; |pbl|LED1-B0:inst11|inst                     ; |pbl|LED1-B0:inst11|inst                     ; out0             ;
+; |pbl|LED1-B0:inst11|B~CD~E~FG                ; |pbl|LED1-B0:inst11|B~CD~E~FG                ; out0             ;
+; |pbl|LED1-B0:inst11|A~BCDE~FG                ; |pbl|LED1-B0:inst11|A~BCDE~FG                ; out0             ;
+; |pbl|LED1-B0:inst11|~FG                      ; |pbl|LED1-B0:inst11|~FG                      ; out0             ;
+; |pbl|LED2:inst|inst45                        ; |pbl|LED2:inst|inst45                        ; out0             ;
+; |pbl|LED2:inst|inst44                        ; |pbl|LED2:inst|inst44                        ; out0             ;
+; |pbl|LED2:inst|inst27                        ; |pbl|LED2:inst|inst27                        ; out0             ;
+; |pbl|LED2:inst|inst24                        ; |pbl|LED2:inst|inst24                        ; out0             ;
+; |pbl|LED2:inst|inst25                        ; |pbl|LED2:inst|inst25                        ; out0             ;
+; |pbl|LED2:inst|inst31                        ; |pbl|LED2:inst|inst31                        ; out0             ;
+; |pbl|LED2:inst|inst30                        ; |pbl|LED2:inst|inst30                        ; out0             ;
+; |pbl|LED2:inst|inst29                        ; |pbl|LED2:inst|inst29                        ; out0             ;
+; |pbl|LED2:inst|inst26                        ; |pbl|LED2:inst|inst26                        ; out0             ;
+; |pbl|LED2:inst|inst28                        ; |pbl|LED2:inst|inst28                        ; out0             ;
+; |pbl|LED2:inst|inst32                        ; |pbl|LED2:inst|inst32                        ; out0             ;
+; |pbl|LED2:inst|inst33                        ; |pbl|LED2:inst|inst33                        ; out0             ;
+; |pbl|LED2:inst|inst34                        ; |pbl|LED2:inst|inst34                        ; out0             ;
+; |pbl|LED2:inst|inst35                        ; |pbl|LED2:inst|inst35                        ; out0             ;
+; |pbl|LED2:inst|inst36                        ; |pbl|LED2:inst|inst36                        ; out0             ;
+; |pbl|LED2:inst|inst37                        ; |pbl|LED2:inst|inst37                        ; out0             ;
+; |pbl|LED2:inst|inst38                        ; |pbl|LED2:inst|inst38                        ; out0             ;
+; |pbl|LED2:inst|inst40                        ; |pbl|LED2:inst|inst40                        ; out0             ;
+; |pbl|LED2:inst|inst41                        ; |pbl|LED2:inst|inst41                        ; out0             ;
+; |pbl|LED2:inst|inst42                        ; |pbl|LED2:inst|inst42                        ; out0             ;
+; |pbl|LED2:inst|inst43                        ; |pbl|LED2:inst|inst43                        ; out0             ;
+; |pbl|LED2:inst|inst8                         ; |pbl|LED2:inst|inst8                         ; out0             ;
+; |pbl|LED2:inst|inst7                         ; |pbl|LED2:inst|inst7                         ; out0             ;
+; |pbl|LED2:inst|inst                          ; |pbl|LED2:inst|inst                          ; out0             ;
+; |pbl|LED2:inst|inst12                        ; |pbl|LED2:inst|inst12                        ; out0             ;
+; |pbl|LED2:inst|inst11                        ; |pbl|LED2:inst|inst11                        ; out0             ;
+; |pbl|LED2:inst|inst10                        ; |pbl|LED2:inst|inst10                        ; out0             ;
+; |pbl|LED2:inst|inst9                         ; |pbl|LED2:inst|inst9                         ; out0             ;
+; |pbl|LED2:inst|inst16                        ; |pbl|LED2:inst|inst16                        ; out0             ;
+; |pbl|LED2:inst|inst14                        ; |pbl|LED2:inst|inst14                        ; out0             ;
+; |pbl|LED2:inst|inst19                        ; |pbl|LED2:inst|inst19                        ; out0             ;
+; |pbl|LED2:inst|inst18                        ; |pbl|LED2:inst|inst18                        ; out0             ;
+; |pbl|LED2:inst|inst17                        ; |pbl|LED2:inst|inst17                        ; out0             ;
+; |pbl|LED2:inst|inst15                        ; |pbl|LED2:inst|inst15                        ; out0             ;
+; |pbl|LED2:inst|inst21                        ; |pbl|LED2:inst|inst21                        ; out0             ;
+; |pbl|LED2:inst|inst20                        ; |pbl|LED2:inst|inst20                        ; out0             ;
+; |pbl|LED2:inst|inst23                        ; |pbl|LED2:inst|inst23                        ; out0             ;
+; |pbl|LED2:inst|inst22                        ; |pbl|LED2:inst|inst22                        ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jan 26 16:37:53 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off pbl -c pbl
+Info: Using vector source file "F:/Documentos/EComp/4º S/TEC401 - Circuitos Digitais/TEC498 - MI Projeto de Circuitos Digitais/PBLs/1/LEDs/PBL/FINAL/pbl.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 21875
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 135 megabytes
+    Info: Processing ended: Tue Jan 26 16:37:57 2016
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
+
+
